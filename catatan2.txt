@@ -1,0 +1,3 @@
+salah sati mannfaat dari git kita dapat mengerjakan pencodingan menjadi lebih fleksibel
+git juga memungkinkan dapat mengerjakan project secara team
+karena dapat dikerjakan secara online

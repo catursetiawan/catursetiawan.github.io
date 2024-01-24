@@ -1,0 +1,3 @@
+ukuran fontsize pada gambar 12px, line 1px.
+penamaan vertex font arial (capital), penamaan garis font times new roman (italic).
+keterangan angka font arial narrow italic, size 9pt

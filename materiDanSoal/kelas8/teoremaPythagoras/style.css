@@ -1,0 +1,671 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background-color: #EDEFF2;
+    /* .container{
+        display: grid;
+        gap: 50px;
+    } */
+}
+
+.coverHeader{
+    position: relative;
+    header{
+        position: relative;
+        background-color: #1e439e;
+        padding: 5px 20px 0px 20px;
+        z-index: 5;
+        #heroLogo{
+            width: 150px;
+        }
+    }
+
+    nav{
+        position: absolute;
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .menuNav{
+            display: flex;
+            justify-content: center;
+            ul{
+                text-align: center;
+                list-style: none;
+            }
+        }
+    }
+}
+/* ------------------------------------------------------------------------   */
+
+    /* ------- MAIN ------- */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+    .materi{
+        background-color: rgba(30, 67, 158, 0.075);
+        border-radius: 5px;
+        h3, h4{
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .rumus{
+            padding: 5px;
+            background-color: white;
+            width: max-content;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px black 
+        }
+    }
+    ol.soalDanJawaban{
+        .QnA{
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .5);
+            .soal{
+                .question{
+                    .containerImgSoal{
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding-bottom: 30px;
+                        .coverImgSoal{
+                            height: 200px;
+                            padding: 20px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .answer{
+                    .jawaban{
+                        .deskripsiJawaban{
+                            .containerImgJawaban{
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding-bottom: 30px;
+                                .coverImgJawaban{
+                                    height: 200px;
+                                    padding: 20px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        .tutupJawaban{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 30px;
+                            height: 20px;
+                            background-color: aqua;
+                            right: 0px;
+                            margin: auto;
+                            margin-top: 20px;
+                            text-align: center;
+                            border-radius: 5px 5px 0 0;
+                            cursor: pointer;
+                            div{
+                                width: 10px;
+                                height: 10px;
+                                border-top: 2px solid black;
+                                border-left: 2px solid black;
+                                transform: rotate(45deg) translateY(2px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+main .materi{
+    background-color: rgba(30, 67, 158, .075);
+    margin-top: 100px;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+main .soalDanJawaban{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    ol, li{
+        margin-left: 0.75em;
+    }
+    .QnA{
+        padding: 15px;
+        margin-top: 15px;
+        .kodeSoal{
+            display: inline-block;
+            padding: 2px 5px;
+            background-color: #36E03E;
+            border-radius: 10px;
+        }
+        li.soal{
+            position: relative;
+            button{
+                margin: 10px auto 2px 0px;
+            }
+            .answer{
+                border: 1px solid #4C5C72;
+                position: relative;
+                width: 100%;
+                padding: 0px 5px;
+                .jawaban{
+                    .deskripsiJawaban p:last-child{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .opsi{
+                .opsiLine{
+                    display: flex;
+                    label{
+                        display: flex;
+                        width: 100%;
+                    }
+                    input{
+                        display: none;
+                    }
+                }
+            }
+            .opsi .opsiLine:has(input:checked){
+                background-color: aqua;
+            }
+        }
+    }
+}
+.answer .jawaban{
+    display: none;
+    width: 100%;
+    /* background-color: #4C5C72; */
+}
+.answer .jawaban.terlihat{
+    display: flex;
+    flex-direction: column;
+}
+.jawabanVideo{
+    background-color: red;
+    display: inline-block;
+    width: 320px;
+    height: 240px;
+    margin-top: 30px;
+    align-self: center;
+}
+
+
+
+
+
+
+    /* ------- MAIN ------- */
+
+
+/* ------------------------------------------------------------------------   */
+
+    /* ------- ASIDE ------- */
+aside{
+    display: flex;
+    flex-direction: column;
+    .kategori{
+        margin-bottom: 20px;
+        border-bottom: 3px solid aqua;
+        h3{
+            display: inline-block;
+            background-color: aqua;
+            padding: .2em 1em;
+            text-align: center;
+            border-radius: 1em 1em 0 0;
+        }
+    }
+}
+aside ul li{
+    margin-top: .25em;
+    margin-bottom: .25em;
+        a{
+        color: black;
+        }
+    }
+    /* ------- ASIDE ------- */
+
+    /* ------- PAGINATIOIN ------- */
+    .page{
+        display: none;
+        a{
+            text-decoration: none;
+            padding: 5px;
+            color: black;
+        }
+        a.aktif{
+            color: white;
+            background-color: rgb(76, 92, 114);
+        }
+        a:hover:not(.aktif){
+            background-color: rgba(76, 92, 114, .5);
+        }
+    }
+    /* ------- PAGINATIOIN ------- */
+
+    footer{
+        width: 60vw;
+        height: 30px;
+        background-color: #1e439e;
+        text-align: center;
+        line-height: 30px;
+        font-size: 10px;
+        color: white;
+    }
+
+/* ===================================================================================   */
+
+/* M.O.B.I.L ------ D.E.V.I.C.E */
+@media screen and (max-width: 577px) {
+
+    .container{
+        display: grid;
+        gap: 30px;
+    }
+    /* ------- DAFTAR ISI ------- */
+    body.tampil{
+        overflow: hidden;
+    }
+    .coverHeader{
+        position: absolute;
+        width: 100vw;
+    }
+    .coverHeader header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .daftarIsi{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        z-index: 8;
+        top: 15px;
+        right: 12px;
+    }
+    .daftarIsi span{
+        display: inline-block;
+        width: 20px;
+        height: 2px;
+        border-radius: 2px;
+        background-color:aliceblue;
+        margin: 3px;
+        transition: all 0.3s;
+    }
+    .daftarIsi.tampil span:nth-child(1){
+        transform: rotate(43deg) translate(2px, 1px);
+        background-color: black;
+    }
+    .daftarIsi.tampil span:nth-child(2){
+       display: none;
+    }
+    .daftarIsi.tampil span:nth-child(3){
+        transform: rotate(-45deg) translate(4px, -4px);
+        background-color: black;
+    }
+
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 70vw;
+        height: 100vh;
+        padding: 25px;
+        padding-top: 75px;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 7;
+        right: 0px;
+        transform: translateX(100vw);
+        opacity: 0;
+        transition: .6s;
+        ul{
+            list-style: none;
+        }
+        a{
+            color: black;
+        }
+    }
+    aside.tampil{
+        transform: translateX(0px);
+        opacity: 100%;
+        overflow: hidden;
+    }
+
+    .overlay.tampil{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        opacity: 50%;
+        z-index: 6;
+    }
+    /* ------- DAFTAR ISI ------- */
+
+
+
+
+
+    /* ------- NAVIGASI ------- */
+    nav{
+        z-index: 4;
+        transform: translateY(-77px);
+        transition: all .3s;
+        a{
+            padding: 0 10px;
+        }
+    }
+
+    .navArrow{
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        transform: rotate(-45deg);
+        cursor: pointer;
+        transition: all .6s;
+    }
+    nav.active{
+        transform: translate(0px);
+    }
+    .menuNav .active{
+        transform: rotate(135deg);
+    }
+
+    .menuNav:nth-child(2){
+        padding: 3px;
+    }
+    /* ------- NAVIGASI ------- */
+
+
+
+
+/* ------------------------------------------------------------------------   */
+
+    /* ------- MAIN ------- */
+
+    main{
+        margin: auto;
+        row-gap: 20px;
+        justify-content: center;
+        width: 100vw;
+    }
+    main .materi, main .soalDanJawaban{
+        margin: auto;
+    }
+
+            /* ------- MATERI ------- */
+    main{
+        margin-top: 100px;
+        .materi{
+            background-color: rgba(30, 67, 158, .075);
+            width: 100%;
+            margin: auto;
+            .coverImgCatatan{
+                width: 75%;
+                margin: auto;
+                margin-top: 10px;
+                bottom: 10px;
+            }
+        }
+    } 
+            /* ------- MATERI ------- */
+
+
+            /* ------- SOAL & JAWABAN ------- */
+    /* main .soalDanJawaban{
+        padding: 10px;
+        width: 90%;
+        ol, li{
+            margin-left: 0.75em;
+        }
+        .QnA{
+            padding: 15px;
+            margin-top: 15px;
+            .kodeSoal{
+                display: inline-block;
+                padding: 2px 5px;
+                background-color: #36E03E;
+                border-radius: 10px;
+            }
+            li.soal{
+                position: relative;
+                button{
+                    margin: 10px auto 2px 0px;
+                }
+                .answer{
+                    border: 1px solid #4C5C72;
+                    position: relative;
+                    width: 100%;
+                    padding: 0px 5px;
+                }
+                .opsi{
+                    .opsiLine{
+                        display: flex;
+                        label{
+                            display: flex;
+                        }
+                    }
+                }
+                .opsi .opsiLine:has(input:checked){
+                    background-color: aqua;
+                }
+            }
+        }
+    }
+    .answer .jawaban{
+        display: none;
+        width: 100%;
+        background-color: #4C5C72;
+    }
+    .answer .jawaban.terlihat{
+        display: flex;
+        flex-direction: column;
+    }
+    .jawabanVideo{
+        background-color: red;
+        display: inline-block;
+        width: 320px;
+        height: 240px;
+        margin-top: 30px;
+        align-self: center;
+    } */
+            /* ------- SOAL & JAWABAN ------- */
+    /* ------- MAIN ------- */
+
+
+
+/* ------------------------------------------------------------------------   */
+
+    /* ------- PAGINATION ------- */
+    .page{
+        text-align: center;
+    }
+    /* ------- PAGINATION ------- */
+
+
+
+
+/* ------------------------------------------------------------------------   */
+    /* ------- FOOTER ------- */
+    footer{
+        width: 100vw;
+    }
+    /* ------- FOOTER ------- */
+
+}
+
+
+/* ===================================================================================   */
+
+
+
+/* D.E.S.K.T.O.P ------ D.E.V.I.C.E */
+@media screen and (min-width: 578px) {
+    .daftarIsi{
+        display: none;
+    }
+    .overlay{
+        display: none;
+    }
+
+    .container{
+        width: 60vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-auto-rows: max-content max-content max-content max-content;
+        grid-template-areas: 
+            'coverHeader coverHeader'
+            'main aside'
+            'pagee pagee'
+            'footer footer';
+        gap: 50px;
+    }
+
+    .coverHeader{
+        width: 100%;
+        grid-area: coverHeader;
+        /* display: inline-block; */
+    }
+    main{
+        /* display: inline-block; */
+        grid-area: main;
+        .coverImgCatatan{
+            width: 60%;
+            margin: auto;
+            margin-top: 10px;
+            bottom: 10px;
+        }
+    }
+    aside{
+        grid-area: aside;
+        /* display: inline-block; */
+    }
+    .page{
+        grid-area: pagee;
+        margin: auto;
+    }
+    footer{
+        width: 100%;
+        grid-area: footer;
+        /* display: inline-block; */
+    }
+
+
+
+    /* ------- NAVIGASI ------- */
+    nav{
+        position: relative;
+        text-align: center;
+    }
+    nav .menuNav:nth-child(2){      /* anak panah */
+        display: none;
+        }
+    nav .menuNav ul.subNav > li{
+        position: relative;
+        /* border-bottom: 3px solid #959BA3; */
+    }
+    
+    /* \\\\\\\\\\\\\\\\\\\ */
+    nav .menuNav ul.subNav > li:hover{
+        background-color: #1e439e;
+        a.contentSubNav{
+            color: white;
+        }
+    }
+    nav .menuNav ul.subNav li ul{
+        background-color: #1e439e;
+        display: none;
+        border-top: 1px solid white;
+    }
+    nav .menuNav ul.subNav li ul li a{
+        color: white;
+    }
+    nav .menuNav ul.subNav li ul li a:hover{
+        color: black;
+    }
+    nav a{
+        display: block;
+        padding: 5px 10px;
+    }
+    nav .menuNav ul.subNav > li:hover ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+    nav li a:hover:not(.contentSubNav){
+        background-color: aqua;
+    }
+
+    /* \\\\\\\\\\\\\\\\\\\ */
+    
+    /* nav .menuNav ul.subNav li ul{
+        background-color: aqua;
+        display: none;
+        border-top: 3px solid #959BA3;
+    }
+    nav a{
+        display: block;
+        padding: 5px 10px;
+    }
+    nav .menuNav ul.subNav li ul a{
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    
+    nav li a:hover{
+        background-color: white;
+    }
+    nav .menuNav ul.subNav li ul a:active{
+        background-color: #959BA3;
+    }
+    
+    nav .menuNav ul.subNav > li:hover ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+    } */
+    /* ------- NAVIGASI ------- */
+
+
+}
+
+
+
+
+
+

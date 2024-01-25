@@ -280,6 +280,10 @@ aside ul li{
 /* M.O.B.I.L ------ D.E.V.I.C.E */
 @media screen and (max-width: 577px) {
 
+    body{
+        overflow-x: hidden;
+    }
+
     .container{
         display: grid;
         gap: 30px;

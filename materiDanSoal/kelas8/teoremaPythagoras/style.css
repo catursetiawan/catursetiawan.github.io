@@ -281,6 +281,7 @@ aside ul li{
 @media screen and (max-width: 577px) {
 
     body{
+        width: 100vw;
         overflow-x: hidden;
     }
 

@@ -340,7 +340,7 @@ aside ul li{
     }
 
     aside{
-        display: flex;
+        display: none;
         flex-direction: column;
         background-color: white;
         width: 70vw;
@@ -362,6 +362,7 @@ aside ul li{
         }
     }
     aside.tampil{
+        display: flex;
         transform: translateX(0px);
         opacity: 100%;
         overflow: hidden;

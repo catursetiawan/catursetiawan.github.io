@@ -353,7 +353,7 @@ aside ul li{
         right: 0px;
         /* transform: translateX(100vw); */
         opacity: 0;
-        transition: .6s;
+        /* transition: .6s; */
         ul{
             list-style: none;
         }

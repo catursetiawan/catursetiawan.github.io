@@ -351,7 +351,7 @@ aside ul li{
         position: absolute;
         z-index: 7;
         right: 0px;
-        transform: translateX(100vw);
+        /* transform: translateX(100vw); */
         opacity: 0;
         transition: .6s;
         ul{

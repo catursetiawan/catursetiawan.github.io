@@ -79,7 +79,7 @@ main{
                         flex-wrap: wrap;
                         padding-bottom: 30px;
                         .coverImgSoal{
-                            height: 200px;
+                            height: max-content;
                             padding: 20px;
                             text-align: center;
                         }
@@ -93,7 +93,7 @@ main{
                                 flex-wrap: wrap;
                                 padding-bottom: 30px;
                                 .coverImgJawaban{
-                                    height: 200px;
+                                    height: max-content;
                                     padding: 20px;
                                     text-align: center;
                                 }
@@ -446,6 +446,10 @@ aside ul li{
                 bottom: 10px;
             }
         }
+    }
+    .coverImgSoal img, .coverImgJawaban img{
+        max-height: 300px;
+        width: 100%;
     } 
             /* ------- MATERI ------- */
 
@@ -576,6 +580,10 @@ aside ul li{
             bottom: 10px;
         }
     }
+    .coverImgSoal img, .coverImgJawaban img{
+        max-height: 200px;
+        height: 100%;
+    }
     aside{
         grid-area: aside;
         /* display: inline-block; */
@@ -669,7 +677,6 @@ aside ul li{
 
 
 }
-
 
 
 

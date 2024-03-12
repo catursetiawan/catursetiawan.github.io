@@ -64,7 +64,7 @@ main{
             margin-top: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
-            box-shadow: 1px 1px 1px 1px black 
+            box-shadow: 1px 1px 1px 1px black;
         }
     }
     ol.soalDanJawaban{
@@ -124,6 +124,10 @@ main{
                 }
             }
         }
+    }
+    .math{
+        overflow-x: auto;
+        max-width: 80vw;
     }
 }
 

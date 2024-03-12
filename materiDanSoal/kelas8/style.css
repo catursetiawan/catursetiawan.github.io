@@ -125,11 +125,6 @@ main{
             }
         }
     }
-    .math{
-        overflow-x: auto;
-        max-width: 80vw;
-        font-size: 0.5em;
-    }
 }
 
 
